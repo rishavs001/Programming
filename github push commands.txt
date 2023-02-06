@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "comment"
+git push origin master
+git push -u -f origin master      // force upload if required(above command not working)
