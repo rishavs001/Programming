@@ -17,7 +17,7 @@ int fact(int n)
     {
         return 1;
     }
-    int factm1=fact(n-1);
-    int factfinal= factm1*n;
+    
+    int factfinal= n*fact(n-1);
     return factfinal;
 }

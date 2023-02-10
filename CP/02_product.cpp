@@ -1,44 +1,48 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 struct product{
-    string productid;
-    float rating;
+    long long pid;
+    string pname;
+    double cdp;
+    long double plp;
+    long double userrate;
+    void input_data()
+    {   
+    cout<<"Enter pid, pname, cdp, plp, user rating \n";
+    cin>>pid>>pname>>cdp>>plp>>userrate;
+    }
+   void output_data()
+    {
+    cout<<"PRODUCT ID :  "<<pid;
+    cout<<"\nPRODUCT NAME : "<<pname;
+    cout<<"\nCURRENT DISCOUNT PERCENTAGE : "<<cdp;
+    cout<<"\nPRODUCT LABEL PRICE :  "<<plp;
+    cout<<"\nUSER RATING : "<<userrate;
+
+    printf("\n");
+    }
+    void computeSalesPrice()
+    {
+        double sgst=0.18*plp-(cdp*(plp/100)),cgst=0.18*plp-(cdp*(plp/100));
+        long double sp;
+        sp=plp-(cdp*(plp/100))+sgst+cgst;
+        cout<<sgst<<endl<<cgst<<endl;
+        cout<<"SALES PRICE: "<<sp;
+    }   
 };
 
-void rating(struct product *pro,int n){
-    int top = 0,average =0,low =0;
-    for(int i=0;i<n;i++){
-    if(pro[i].rating>=4){
-        top++;
+
+int main()
+{
+    product arr[5];
+    for(int i=0;i<5;i++)
+    {
+    cout<<"Details for product "<<i+1<<"\n   ";
+    arr[i].input_data();
+    arr[i].output_data();
+    arr[i].computeSalesPrice();
+    cout<<endl<<endl;
     }
-    else if(pro[i].rating>=3){
-        average++;
-    }
-    else{
-        low++;
-    }}
-    cout<<"Top Rated : "<<top<<"\nAverage Rated : "<<average<<"\nLow Rated : "<<low<<endl;
+    
+    return 0;
 }
-
-int main(){
-
-int nPro;
-cout<<"Enter the number of products : ";
-cin>>nPro;
-
-product pro[nPro];
-
-for(int i=0;i<nPro;i++){
-    cout<<"Enter product id : ";
-    cin>>pro[i].productid;
-    cout<<"Enter product rating : ";
-    cin>>pro[i].rating;
-}
-rating(pro,nPro);
-
-return 0;
-}
-
-
-
