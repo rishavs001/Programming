@@ -2,7 +2,6 @@
         ADD 2 COMPLEX NUMBERS
 */
 #include<iostream>   
-#include<conio.h>    
 using namespace std;
 
 
@@ -45,7 +44,6 @@ int main()
     c2.set_data(5,8);
     c3=c1.add(c2);
     c3.show_data();
-    getch();
 }
 
 

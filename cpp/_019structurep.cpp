@@ -3,15 +3,15 @@
         ->FUNCTIONS WITH STRUCTURE DATA TYPE CAN BE CREATED
 */
 
-#include<iostream>   //cin,cout
-#include<conio.h>    //clrscr(),getch()
+#include<bits/stdc++.h>   //cin,cout
+//#include<conio.h>    //clrscr(),getch()
 using namespace std;
 //void method1();
 
 struct student{
     int roll;
     float cgpa;
-    char name[100];
+    string name;
 }S8;        //ALSO A WAY OF  DECLARING STRUCTURE VARIABLE 
 
 student method2();
@@ -27,8 +27,8 @@ int main()
     display(b2);
     //method2();
     
-    //return 0;
-    getch();
+    return 0;
+   // getch();
 }
 /*
 void method1()
@@ -36,7 +36,7 @@ void method1()
     student s1; //writing struct first is not mandatory in CPP.
     s1.roll=50;
     s1.cgpa=92.5;
-  //s1.name="Rishav";   <--Not a valid method since declaration is for array and not pointer
+  //s1.name="Rishav";  // <--Not a valid method since declaration is for array and not pointer
     strcpy(s1.name,"Rishav");
 
     cout<<"Name :  \n"<<s1.name;

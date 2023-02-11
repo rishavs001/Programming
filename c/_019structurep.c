@@ -74,7 +74,7 @@ void method4()
     printf("CGPA : %f \n",(*ptr).cgpa);   
     printf("\n");
 
-    struct student s3={54,64.5,"Prateek"};
+    struct student s3={54,64.5,"Punit"};
     struct student *ptr1= &s3;
     printf("Name : %s \n",ptr1->name);
     printf("Roll : %d \n",ptr1->roll);

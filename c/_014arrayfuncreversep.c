@@ -19,7 +19,8 @@ for (int i = 0; i < 5; i++)
 }
 }
 void printReverse(int *arr, int n)
-{ int i;
+{ 
+    int i;
     printf("Reverse is\n");
     for ( i = 0; i < n/2; i++)
     {
