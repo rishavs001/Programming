@@ -22,7 +22,7 @@ void printReverse(int *arr, int n)
 { 
     int i;
     printf("Reverse is\n");
-    for ( i = 0; i < n/2; i++)
+    for ( i= 0; i < n/2; i++)
     {
         int firstval= arr[i];
         int lastval= arr[n-i-1];

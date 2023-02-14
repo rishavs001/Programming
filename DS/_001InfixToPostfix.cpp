@@ -27,9 +27,9 @@ int main()
 {
 
     string s;
-   // cout<<"Enter string\n";
-       s="a+b*(c^d-e)^(f+g*h)-i";
-   // cin>>s;
+   cout<<"Enter string\n";
+    //   s="a+b*(c^d-e)^(f+g*h)-i";
+   cin>>s;
     
     infixtopostfix(s);
 

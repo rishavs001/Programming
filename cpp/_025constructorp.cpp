@@ -10,7 +10,6 @@
 
 */
 #include<iostream>   
-#include<conio.h>
 #include<stdlib.h>    
 using namespace std;
 
@@ -33,5 +32,6 @@ int main()
    
     complex c1(3,4);
 
-    getch();
+    return 0;
+   // getch();
 }

@@ -3,13 +3,12 @@
     It is declared in the class with friend keyword
     It must be defined outside the class to which it is friend
     it can access any member of the class to which it is friend
-    It cannot access members of the class ddirectly
+    It cannot access members of the class directly
     It should not be defined with membership label
 */
 
 
 #include<iostream>   //cin,cout
-#include<conio.h>    //clrscr(),getch()
 using namespace std;
 
     class complex{
@@ -26,8 +25,7 @@ using namespace std;
 
     void show_data()
     {
-    cout<<"a= "<<a<<"\nb= "<<b;
-    
+    cout<<"a= "<<a<<"\nb= "<<b;   
     }
 
 
@@ -47,7 +45,7 @@ int main()
     fun(c1);
     //c1.show_data();
     
-    getch();
+    return 0;
 }
 
 
