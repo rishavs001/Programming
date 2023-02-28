@@ -20,10 +20,20 @@ class complex
     int a,b;
 
     public:
-    complex(int x, int y)
+    complex(int x, int y)   //parameterized constructor
     {
         a=x;
         b=y;
+    }
+    complex(const complex &ob)  //copy constructor
+    {
+        a=ob.a;
+        b=ob.b;
+    }
+
+     void show_data()
+    {
+        cout<<a <<" "<<b<<endl;
     }
 };
 
@@ -31,7 +41,10 @@ int main()
 {
    
     complex c1(3,4);
+    complex c2=c1;
+    c1.show_data();
 
+    c2.show_data();
     return 0;
    // getch();
 }

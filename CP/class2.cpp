@@ -7,7 +7,7 @@ class Account
 
 public:
     static int totalbal;
-    Account(int x,int y):accountno(x),balance👍
+    Account(int x,int y): accountno(x),balance
     {
         totalbal+=y;
     }

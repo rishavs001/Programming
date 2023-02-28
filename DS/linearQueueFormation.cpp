@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int arr[10],front=-1,rear=-1,num;
+int arr[5],front=-1,rear=-1,num;
 void push_back();
 void pop_front();
 void display();

@@ -7,8 +7,6 @@ void reverseStr(string& str)
 {
     int n = str.length();
   
-    // Swap character starting from two
-    // corners
     for (int i = 0; i < n / 2; i++)
         swap(str[i], str[n - i - 1]);
 }
@@ -37,9 +35,9 @@ int main()
 {
 
     string s;
-   cout<<"Enter string\n";
-    //   s="a+b*(c^d-e)^(f+g*h)-i";
-   cin>>s;
+//    cout<<"Enter string\n";
+ s="a+b*(c^d-e)^(f+g*h)-i";
+//    cin>>s;
     reverseStr(s);
     //s.length();
     infixtopostfix(s);
@@ -55,7 +53,7 @@ void infixtopostfix(string s)
         for(int i=0;i<s.length();i++)
         {
             c=s[i];
-            if((c>='A' && c<='Z')|| (c>='a' && c<='z')|| (c>='0' && c<='9'))
+            if((c>='A' && c<='Z')|| (c>='a' && c<='z') || (c>='0' && c<='9'))
             {
                 result+=c;
             }
@@ -77,7 +75,7 @@ void infixtopostfix(string s)
 
             else
             {
-                while(!st.empty() && prec(s[i])>=prec(st.top()))
+                while(!st.empty() && prec(s[i])<prec(st.top()))
                 {
                     result+=st.top();
                     st.pop();
@@ -90,5 +88,6 @@ void infixtopostfix(string s)
             result+=st.top();
             st.pop();
         }
+        reverseStr(result);
         cout << result << endl;
 }

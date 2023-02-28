@@ -37,7 +37,6 @@ int main()
     //method1();
     student s1;
     s1.input();
-    s1.display();
-    
+    s1.display();   
     getch();
 }

@@ -79,7 +79,7 @@ void pop_front()
     {
         front=-1;
         rear=-1;
-        cout<<"Queue is now empty\n";
+        cout<<"Queue is already empty\n";
     }
     else
     {
@@ -148,12 +148,8 @@ void display()
         while(i!=rear)
         {
             cout<<arr[i]<<" ";
-            i=(front+1)%10;
+            i=(i+1)%10;
         }
-    
-
-
-    
     cout<<endl;
     }
 }

@@ -27,7 +27,7 @@ int main()
     a=area(l,b);
     cout<<"\nArea of rectangle is "<<a<<endl;
 
-    getch();
+   // getch();
 
 }
 

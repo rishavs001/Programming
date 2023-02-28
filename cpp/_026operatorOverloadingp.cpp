@@ -39,9 +39,7 @@ class complex{
         temp.b=-b;
         return(temp);
     }
-
-
-   
+  
 };
 
 void complex::set_data(int x, int y)        //Class function definition outside classs

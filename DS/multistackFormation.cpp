@@ -141,7 +141,7 @@ void display()
     cin>>num;
     if(num==1)
     {
-    for(int i=0;i<top1;i++)
+    for(int i=top1;i>0;i--)
     {
         cout<<arr[i]<<" ";
     }

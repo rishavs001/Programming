@@ -64,8 +64,5 @@ int main()
     c1.show_data();
     c3.show_data();
   
-   
-   
-
-    getch();
+ 
 }

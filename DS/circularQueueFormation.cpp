@@ -89,7 +89,7 @@ void display()
         while(i!=rear)
         {
             cout<<arr[i]<<" ";
-            i=(front+1)%10;
+            i=(i+1)%10;
         }
     
 
