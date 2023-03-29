@@ -5,7 +5,7 @@
         "rb"= open to read in binary
         "w"= open to write    // erases the earlier contents....also creates file if doesn't exist
         "wb"= open to write in binary
-        "a"= open to append   // add content to file0
+        "a"= open to append   // add content to file
 */
 
 #include<stdio.h>

@@ -35,6 +35,11 @@ class account
     {
         roi=r;
     }
+
+    static void getRoi()     //Static Member Function
+    {
+        return roi;
+    }
 };
 
 float account:: roi=3.5;        //Must be defined outside the class. If not  initialized, value 0 by default
@@ -45,4 +50,5 @@ void main()
 
     //a1.setRoi(2.54);              //Using object in case of nonstatic function
     account:: setRoi(2.54);         //No object is required in case of static member function
+    cout<<account::getroi();
 }

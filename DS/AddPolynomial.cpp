@@ -1,4 +1,3 @@
-//2
 
 #include <iostream>
 using namespace std;
@@ -84,8 +83,8 @@ int main() {
     p2.addTerm(3, 3);
     p2.addTerm(2, 1);
     Polynomial p3 = p1.add(p2);
-    p1.print(); // output: 2x^3 + 1x^2 + 3x^0 + 0
-    p2.print(); // output: 3x^3 + 2x^1 + 0
-    p3.print(); // output: 5x^3 + 1x^2 + 2x^1 + 3x^0 + 0
+    p1.print(); 
+    p2.print(); 
+    p3.print(); 
     return 0;
 }
