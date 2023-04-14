@@ -13,7 +13,7 @@ int main()
     _age= *ptr;
     printf("%d \n",_age);
     printf("%d \n",*ptr);
-  
+ 
 
    // age=22;
    //*ptr=&age;

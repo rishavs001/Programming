@@ -19,7 +19,7 @@ class A
 class B
 {
     friend class A;     //To make all the functions of A, friend function of B
-    friend void A::fun(); //To make particular function of A, friend function of B
+    friend void A :: fun(); //To make particular function of A, friend function of B
 };
 
 

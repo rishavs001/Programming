@@ -35,8 +35,6 @@ void complex::set_data(int x, int y)        //Class function definition outside 
     }
 
 
-
-
 int main()
 {
     complex c1,c2,c3;         //c1 is an object and not a variable;

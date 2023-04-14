@@ -19,5 +19,5 @@ int main()
     int &j=c;  //j is a reference variable(decalared with & always)
     j++;
     cout<<c;
-    getch();
+    getchar();
 }

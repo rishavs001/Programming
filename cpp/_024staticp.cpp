@@ -42,7 +42,7 @@ class account
     }
 };
 
-float account:: roi=3.5;        //Must be defined outside the class. If not  initialized, value 0 by default
+float account :: roi=3.5;        //Must be defined outside the class. If not  initialized, value 0 by default
 
 void main()
 {

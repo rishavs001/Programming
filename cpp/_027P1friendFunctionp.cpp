@@ -29,7 +29,7 @@ class B
 
 void fun(A obj1, B obj2)
 {
-    cout<<"Sum is "<<obj1.a+obj2.b;
+    cout<<"Sum is "<< obj1.a+obj2.b;
 }
 
 int main()
