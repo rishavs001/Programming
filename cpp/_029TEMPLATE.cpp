@@ -3,7 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-template <class X> X big(x a , X b)
+template <class X> 
+X big(x a , X b)
 {
     if(a>b)
         return a;

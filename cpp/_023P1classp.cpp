@@ -21,7 +21,7 @@ class complex{
     {
         complex temp;
         temp.a=a+c.a;
-        temp.b=a+c.b;
+        temp.b=b+c.b;
         return(temp);
     }
 
